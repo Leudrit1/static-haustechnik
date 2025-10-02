@@ -42,7 +42,7 @@ const valueProps = [
 
 export default function ValuePropositions() {
   return (
-    <section className="py-20 px-4 sm:px-6 lg:px-8 bg-white">
+    <section className="py-20 px-4 sm:px-6 lg:px-8 bg-card">
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {valueProps.map((prop, index) => (
@@ -57,7 +57,7 @@ export default function ValuePropositions() {
               <div className={`w-16 h-16 ${prop.color === 'text-primary' ? 'bg-primary/10' : 'bg-accent/10'} rounded-full flex items-center justify-center mx-auto mb-4 service-icon`}>
                 <prop.icon className={`w-8 h-8 ${prop.color}`} />
               </div>
-              <h3 className="text-xl font-bold text-secondary mb-3">{prop.title}</h3>
+              <h3 className="text-xl font-bold text-foreground mb-3">{prop.title}</h3>
               <p className="text-muted-foreground">{prop.description}</p>
             </motion.div>
           ))}

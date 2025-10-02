@@ -16,7 +16,7 @@ export default function Navigation() {
   }, []);
 
   return (
-    <nav className={`fixed top-0 left-0 right-0 bg-white z-50 transition-shadow duration-300 ${isScrolled ? 'shadow-lg' : ''}`}>
+    <nav className={`fixed top-0 left-0 right-0 bg-secondary/95 backdrop-blur-sm z-50 transition-shadow duration-300 ${isScrolled ? 'shadow-lg shadow-primary/10' : ''}`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
           {/* Logo */}
@@ -27,7 +27,7 @@ export default function Navigation() {
               className="h-12 w-12" 
             />
             <div>
-              <h1 className="text-xl font-bold text-secondary">VELUNA</h1>
+              <h1 className="text-xl font-bold text-foreground">VELUNA</h1>
               <p className="text-xs text-muted-foreground">HAUSTECHNIK GMBH</p>
             </div>
           </div>
@@ -40,11 +40,11 @@ export default function Navigation() {
             <a href="#leistungen" className="text-foreground hover:text-primary transition-colors font-medium" data-testid="nav-services">
               Leistungen
             </a>
-            <a href="#projekte" className="text-foreground hover:text-primary transition-colors font-medium" data-testid="nav-projects">
-              Projekte
-            </a>
             <a href="#ueber-uns" className="text-foreground hover:text-primary transition-colors font-medium" data-testid="nav-about">
               Über uns
+            </a>
+            <a href="#projekte" className="text-foreground hover:text-primary transition-colors font-medium" data-testid="nav-projects">
+              Projekte
             </a>
             <a 
               href="#kontakt" 
@@ -81,11 +81,11 @@ export default function Navigation() {
                 <a href="#leistungen" className="text-foreground hover:text-primary transition-colors font-medium py-2" onClick={() => setIsOpen(false)}>
                   Leistungen
                 </a>
-                <a href="#projekte" className="text-foreground hover:text-primary transition-colors font-medium py-2" onClick={() => setIsOpen(false)}>
-                  Projekte
-                </a>
                 <a href="#ueber-uns" className="text-foreground hover:text-primary transition-colors font-medium py-2" onClick={() => setIsOpen(false)}>
                   Über uns
+                </a>
+                <a href="#projekte" className="text-foreground hover:text-primary transition-colors font-medium py-2" onClick={() => setIsOpen(false)}>
+                  Projekte
                 </a>
                 <a 
                   href="#kontakt" 

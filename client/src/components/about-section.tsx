@@ -9,7 +9,7 @@ const stats = [
 
 export default function AboutSection() {
   return (
-    <section id="ueber-uns" className="py-20 px-4 sm:px-6 lg:px-8 bg-white">
+    <section id="ueber-uns" className="py-20 px-4 sm:px-6 lg:px-8 bg-background">
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <motion.div
@@ -18,11 +18,14 @@ export default function AboutSection() {
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
           >
-            <img 
-              src="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&h=800" 
-              alt="Veluna Haustechnik Team" 
-              className="rounded-2xl shadow-2xl w-full h-auto"
-            />
+            <div className="relative rounded-2xl overflow-hidden shadow-2xl border border-border">
+              <img 
+                src="https://images.unsplash.com/photo-1621905252472-3d0469a40e07?q=80&w=1200&auto=format&fit=crop" 
+                alt="Veluna Haustechnik Team" 
+                className="w-full h-auto brightness-90"
+              />
+              <div className="absolute inset-0 bg-gradient-to-tr from-secondary/20 to-transparent"></div>
+            </div>
           </motion.div>
           
           <motion.div
@@ -31,7 +34,7 @@ export default function AboutSection() {
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
           >
-            <h2 className="text-4xl font-bold text-secondary mb-6">Geschichte und Vision</h2>
+            <h2 className="text-4xl font-bold text-foreground mb-6">Geschichte und Vision</h2>
             <p className="text-lg text-muted-foreground mb-6">
               Veluna Haustechnik GmbH wurde mit dem klaren Ziel gegründet, erstklassige Haustechnik-Lösungen für die Schweiz anzubieten. Unser Fokus liegt auf modernen Wasser- und Heizsystemen, die höchsten Qualitätsstandards entsprechen.
             </p>

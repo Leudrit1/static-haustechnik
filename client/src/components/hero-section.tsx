@@ -3,8 +3,11 @@ import { Phone } from "lucide-react";
 
 export default function HeroSection() {
   return (
-    <section id="home" className="hero-gradient pt-32 pb-20 px-4 sm:px-6 lg:px-8 mt-20">
-      <div className="max-w-7xl mx-auto">
+    <section id="home" className="hero-gradient pt-32 pb-20 px-4 sm:px-6 lg:px-8 mt-20 relative overflow-hidden">
+      <div className="absolute inset-0 opacity-20">
+        <div className="absolute inset-0 bg-black/80" style={{ backgroundImage: "url('https://images.unsplash.com/photo-1581094794329-c8112a89af12?q=80&w=2000')", backgroundSize: 'cover', backgroundPosition: 'center', backgroundBlendMode: 'multiply' }}></div>
+      </div>
+      <div className="max-w-7xl mx-auto relative z-10">
         <div className="text-center">
           <motion.h1 
             initial={{ opacity: 0, y: 30 }}

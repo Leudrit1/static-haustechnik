@@ -3,34 +3,34 @@ import { useState } from "react";
 
 const projects = [
   {
-    src: "https://images.unsplash.com/photo-1585704032915-c3400ca199e7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=800",
-    largeSrc: "https://images.unsplash.com/photo-1585704032915-c3400ca199e7?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&h=1200",
-    alt: "Badezimmer Sanierung"
+    src: "https://images.unsplash.com/photo-1607400201889-565b1ee75f8e?q=80&w=800&auto=format&fit=crop",
+    largeSrc: "https://images.unsplash.com/photo-1607400201889-565b1ee75f8e?q=80&w=1200&auto=format&fit=crop",
+    alt: "Heizungssystem mit Rohrleitungen"
   },
   {
-    src: "https://images.unsplash.com/photo-1620626011761-996317b8d101?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=800",
-    largeSrc: "https://images.unsplash.com/photo-1620626011761-996317b8d101?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&h=1200",
-    alt: "Heizungssystem Installation"
+    src: "https://images.unsplash.com/photo-1581094794329-c8112a89af12?q=80&w=800&auto=format&fit=crop",
+    largeSrc: "https://images.unsplash.com/photo-1581094794329-c8112a89af12?q=80&w=1200&auto=format&fit=crop",
+    alt: "Kupfer Wasserrohre Installation"
   },
   {
-    src: "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=800",
-    largeSrc: "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&h=1200",
-    alt: "Wasserleitung Installation"
+    src: "https://images.unsplash.com/photo-1621905252507-b35492cc74b4?q=80&w=800&auto=format&fit=crop",
+    largeSrc: "https://images.unsplash.com/photo-1621905252507-b35492cc74b4?q=80&w=1200&auto=format&fit=crop",
+    alt: "Industrielle Rohrleitungssysteme"
   },
   {
-    src: "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=800",
-    largeSrc: "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&h=1200",
-    alt: "Komplette Badezimmer Renovation"
+    src: "https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?q=80&w=800&auto=format&fit=crop",
+    largeSrc: "https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?q=80&w=1200&auto=format&fit=crop",
+    alt: "Blaue Wasserrohre"
   },
   {
-    src: "https://images.unsplash.com/photo-1607400201889-565b1ee75f8e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=800",
-    largeSrc: "https://images.unsplash.com/photo-1607400201889-565b1ee75f8e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&h=1200",
-    alt: "Moderne Heizanlage"
+    src: "https://images.unsplash.com/photo-1635274343801-66d9ce5d60dc?q=80&w=800&auto=format&fit=crop",
+    largeSrc: "https://images.unsplash.com/photo-1635274343801-66d9ce5d60dc?q=80&w=1200&auto=format&fit=crop",
+    alt: "PVC Rohrleitungen"
   },
   {
-    src: "https://images.unsplash.com/photo-1600566752355-35792bedcfea?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=800",
-    largeSrc: "https://images.unsplash.com/photo-1600566752355-35792bedcfea?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&h=1200",
-    alt: "Küchen Sanitär-Installation"
+    src: "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?q=80&w=800&auto=format&fit=crop",
+    largeSrc: "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?q=80&w=1200&auto=format&fit=crop",
+    alt: "Komplexe Rohrinstallation"
   }
 ];
 
@@ -49,7 +49,7 @@ export default function ProjectsGallery({ onImageClick }: ProjectsGalleryProps) 
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl font-bold text-secondary mb-4">Unsere Projekte</h2>
+          <h2 className="text-4xl font-bold text-foreground mb-4">Unsere Projekte</h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
             Ein Einblick in unsere erfolgreich abgeschlossenen Haustechnik-Projekte
           </p>
@@ -70,7 +70,7 @@ export default function ProjectsGallery({ onImageClick }: ProjectsGalleryProps) 
               <img 
                 src={project.src} 
                 alt={project.alt} 
-                className="w-full h-full object-cover"
+                className="w-full h-full object-cover brightness-90"
               />
             </motion.div>
           ))}

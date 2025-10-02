@@ -4,44 +4,44 @@
 @tailwind utilities;
 
 :root {
-  --background: hsl(210, 20%, 98%);
-  --foreground: hsl(215, 15%, 20%);
-  --card: hsl(0, 0%, 100%);
-  --card-foreground: hsl(215, 15%, 20%);
-  --popover: hsl(0, 0%, 100%);
-  --popover-foreground: hsl(215, 15%, 20%);
-  --primary: hsl(195, 65%, 45%);
+  --background: hsl(215, 45%, 12%);
+  --foreground: hsl(0, 0%, 95%);
+  --card: hsl(215, 40%, 16%);
+  --card-foreground: hsl(0, 0%, 95%);
+  --popover: hsl(215, 45%, 12%);
+  --popover-foreground: hsl(0, 0%, 95%);
+  --primary: hsl(195, 65%, 50%);
   --primary-foreground: hsl(0, 0%, 100%);
-  --secondary: hsl(215, 50%, 10%);
+  --secondary: hsl(215, 50%, 8%);
   --secondary-foreground: hsl(0, 0%, 100%);
-  --muted: hsl(210, 15%, 95%);
-  --muted-foreground: hsl(215, 10%, 45%);
-  --accent: hsl(40, 88%, 60%);
-  --accent-foreground: hsl(215, 15%, 20%);
+  --muted: hsl(215, 35%, 18%);
+  --muted-foreground: hsl(210, 10%, 70%);
+  --accent: hsl(42, 95%, 55%);
+  --accent-foreground: hsl(215, 50%, 8%);
   --destructive: hsl(0, 70%, 50%);
   --destructive-foreground: hsl(0, 0%, 100%);
-  --border: hsl(210, 15%, 88%);
-  --input: hsl(210, 15%, 88%);
-  --ring: hsl(195, 65%, 45%);
-  --chart-1: hsl(195, 65%, 45%);
+  --border: hsl(215, 35%, 25%);
+  --input: hsl(215, 35%, 20%);
+  --ring: hsl(195, 65%, 50%);
+  --chart-1: hsl(195, 65%, 50%);
   --chart-2: hsl(159, 100%, 36%);
-  --chart-3: hsl(40, 88%, 60%);
+  --chart-3: hsl(42, 95%, 55%);
   --chart-4: hsl(147, 78%, 42%);
   --chart-5: hsl(341, 75%, 51%);
-  --sidebar: hsl(210, 15%, 95%);
-  --sidebar-foreground: hsl(215, 15%, 20%);
-  --sidebar-primary: hsl(195, 65%, 45%);
+  --sidebar: hsl(215, 40%, 16%);
+  --sidebar-foreground: hsl(0, 0%, 95%);
+  --sidebar-primary: hsl(195, 65%, 50%);
   --sidebar-primary-foreground: hsl(0, 0%, 100%);
-  --sidebar-accent: hsl(210, 15%, 95%);
-  --sidebar-accent-foreground: hsl(195, 65%, 45%);
-  --sidebar-border: hsl(210, 15%, 88%);
-  --sidebar-ring: hsl(195, 65%, 45%);
+  --sidebar-accent: hsl(215, 35%, 18%);
+  --sidebar-accent-foreground: hsl(195, 65%, 50%);
+  --sidebar-border: hsl(215, 35%, 25%);
+  --sidebar-ring: hsl(195, 65%, 50%);
   --font-sans: 'Inter', system-ui, sans-serif;
   --font-serif: Georgia, serif;
   --font-mono: Menlo, monospace;
   --radius: 0.5rem;
-  --hero-gradient-from: hsl(215, 50%, 10%);
-  --hero-gradient-to: hsl(195, 45%, 20%);
+  --hero-gradient-from: hsl(215, 50%, 8%);
+  --hero-gradient-to: hsl(195, 45%, 15%);
 }
 
 .dark {
@@ -119,9 +119,9 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background: linear-gradient(135deg, hsla(195, 65%, 45%, 0.8) 0%, hsla(40, 88%, 60%, 0.8) 100%);
+    background: linear-gradient(135deg, hsla(195, 65%, 45%, 0.3) 0%, hsla(42, 95%, 55%, 0.3) 100%);
     opacity: 0;
-    transition: opacity 0.3s ease;
+    transition: opacity 0.4s ease;
   }
 
   .gallery-item:hover::after {
@@ -129,11 +129,11 @@
   }
 
   .gallery-item img {
-    transition: transform 0.5s ease;
+    transition: transform 0.6s ease;
   }
 
   .gallery-item:hover img {
-    transform: scale(1.1);
+    transform: scale(1.05);
   }
 
   .backdrop-blur-glass {

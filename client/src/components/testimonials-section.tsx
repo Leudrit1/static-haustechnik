@@ -24,7 +24,7 @@ const testimonials = [
 
 export default function TestimonialsSection() {
   return (
-    <section className="py-20 px-4 sm:px-6 lg:px-8 bg-white">
+    <section className="py-20 px-4 sm:px-6 lg:px-8 bg-card">
       <div className="max-w-7xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -33,7 +33,7 @@ export default function TestimonialsSection() {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl font-bold text-secondary mb-4">Was unsere Kunden sagen</h2>
+          <h2 className="text-4xl font-bold text-foreground mb-4">Was unsere Kunden sagen</h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
             Zufriedene Kunden sind unser bester Beweis für Qualität und Service
           </p>
@@ -66,7 +66,7 @@ export default function TestimonialsSection() {
                   {testimonial.initials}
                 </div>
                 <div>
-                  <div className="font-semibold text-secondary">{testimonial.name}</div>
+                  <div className="font-semibold text-foreground">{testimonial.name}</div>
                   <div className="text-sm text-muted-foreground">{testimonial.location}</div>
                 </div>
               </div>

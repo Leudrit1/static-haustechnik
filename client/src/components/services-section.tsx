@@ -5,7 +5,7 @@ const services = [
   {
     title: "Wassersysteme",
     description: "Professionelle Installation und Wartung von Wasserleitungen, Sanitäranlagen und modernen Wassersystemen für Ihr Zuhause.",
-    image: "https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=500",
+    image: "https://images.unsplash.com/photo-1607400201889-565b1ee75f8e?q=80&w=800&auto=format&fit=crop",
     features: [
       "Wasserleitung Installation",
       "Sanitär-Installationen", 
@@ -15,7 +15,7 @@ const services = [
   {
     title: "Heizungsinstallation",
     description: "Moderne Heizsysteme für optimale Energieeffizienz und Wohnkomfort. Beratung, Installation und Service aus einer Hand.",
-    image: "https://images.unsplash.com/photo-1621905251189-08b45d6a269e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=500",
+    image: "https://images.unsplash.com/photo-1581094794329-c8112a89af12?q=80&w=800&auto=format&fit=crop",
     features: [
       "Wärmepumpen",
       "Fußbodenheizung",
@@ -25,7 +25,7 @@ const services = [
   {
     title: "Allgemeine Haustechnik",
     description: "Umfassende Haustechnik-Dienstleistungen für Neubauten, Renovationen und Sanierungen in der ganzen Schweiz.",
-    image: "https://images.unsplash.com/photo-1581578731548-c64695cc6952?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=500",
+    image: "https://images.unsplash.com/photo-1621905252507-b35492cc74b4?q=80&w=800&auto=format&fit=crop",
     features: [
       "Neubau-Installationen",
       "Renovationen",
@@ -45,7 +45,7 @@ export default function ServicesSection() {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl font-bold text-secondary mb-4">Unsere Leistungen</h2>
+          <h2 className="text-4xl font-bold text-foreground mb-4">Unsere Leistungen</h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
             Professionelle Haustechnik-Lösungen für Ihr Zuhause – von der Planung bis zur Installation
           </p>
@@ -59,15 +59,18 @@ export default function ServicesSection() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: index * 0.2 }}
               viewport={{ once: true }}
-              className="bg-white rounded-xl overflow-hidden shadow-lg card-hover"
+              className="bg-card rounded-xl overflow-hidden shadow-lg card-hover border border-border"
             >
-              <img 
-                src={service.image} 
-                alt={service.title} 
-                className="w-full h-64 object-cover"
-              />
+              <div className="relative w-full h-64 overflow-hidden">
+                <img 
+                  src={service.image} 
+                  alt={service.title} 
+                  className="w-full h-full object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-b from-transparent to-secondary/30"></div>
+              </div>
               <div className="p-6">
-                <h3 className="text-2xl font-bold text-secondary mb-3">{service.title}</h3>
+                <h3 className="text-2xl font-bold text-foreground mb-3">{service.title}</h3>
                 <p className="text-muted-foreground mb-4">{service.description}</p>
                 
                 <ul className="space-y-2 mb-6">
