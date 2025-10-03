@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
+import logoImage from "@assets/favicon.png";
 
 export default function Navigation() {
   const [isOpen, setIsOpen] = useState(false);
@@ -22,9 +23,9 @@ export default function Navigation() {
           {/* Logo */}
           <div className="flex items-center space-x-3">
             <img 
-              src="@assets/file_0000000029ec624386d5269d1de74cd4 (1)_1759404058688.png" 
+              src={logoImage} 
               alt="Veluna Logo" 
-              className="h-12 w-12" 
+              className="h-11 w-10" 
             />
             <div>
               <h1 className="text-xl font-bold text-foreground">VELUNA</h1>

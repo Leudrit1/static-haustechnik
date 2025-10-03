@@ -24,13 +24,13 @@ const contactInfo = [
   {
     icon: MapPin,
     title: "Adresse",
-    content: ["Musterstrasse 123", "CH-3000 Bern", "Schweiz"]
+    content: ["Allmendstrasse 170", "CH-3603 Thun", "Schweiz"]
   },
   {
     icon: Phone,
     title: "Telefon",
-    content: ["+41 (0) 00 000 00 00"],
-    href: "tel:+41000000000"
+    content: ["+41 78 856 33 91"],
+    href: "tel:+41788563391"
   },
   {
     icon: Mail,
@@ -123,11 +123,11 @@ export default function ContactSection() {
               <h4 className="font-semibold text-lg mb-4">24/7 Notfall-Service</h4>
               <p className="text-white/80 mb-4">Bei dringenden Problemen erreichen Sie uns rund um die Uhr:</p>
               <a 
-                href="tel:+41000000000" 
+                href="tel:+41788563391" 
                 className="inline-block bg-accent text-accent-foreground px-8 py-4 rounded-lg hover:opacity-90 transition-opacity font-bold text-lg"
                 data-testid="emergency-contact"
               >
-                Notfall: +41 (0) 00 000 00 00
+                Notfall: +41 78 856 33 91
               </a>
             </div>
           </motion.div>
@@ -193,7 +193,7 @@ export default function ContactSection() {
                           <Input 
                             {...field} 
                             type="tel"
-                            placeholder="+41 00 000 00 00"
+                            placeholder="+41 78 856 33 91"
                             className="bg-white/90 text-foreground border-white/30 focus:ring-accent"
                             data-testid="contact-phone"
                           />

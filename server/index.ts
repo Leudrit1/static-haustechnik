@@ -16,6 +16,9 @@ app.use(express.json({
 }));
 app.use(express.urlencoded({ extended: false }));
 
+// Serve static files from attached_assets
+app.use('/attached_assets', express.static('attached_assets'));
+
 app.use((req, res, next) => {
   const start = Date.now();
   const path = req.path;
@@ -73,8 +76,7 @@ app.use((req, res, next) => {
   const port = parseInt(process.env.PORT || '5000', 10);
   server.listen({
     port,
-    host: "0.0.0.0",
-    reusePort: true,
+    host: "localhost",
   }, () => {
     log(`serving on port ${port}`);
   });

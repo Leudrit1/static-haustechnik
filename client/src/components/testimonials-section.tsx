@@ -3,21 +3,21 @@ import { Star } from "lucide-react";
 
 const testimonials = [
   {
-    name: "Stefan Müller",
-    location: "Zürich",
-    initials: "SM",
+    name: "Emre Öztürk",
+    location: "Thun",
+    initials: "EO",
     text: "Hervorragende Arbeit! Die Installation unseres neuen Heizsystems verlief reibungslos und professionell. Das Team war pünktlich, sauber und sehr kompetent."
   },
   {
-    name: "Anna Weber",
+    name: "Anthony Büchel",
     location: "Bern",
-    initials: "AW",
+    initials: "AB",
     text: "Schnelle Reaktion bei unserem Notfall. Die Wasserleitungsreparatur wurde noch am selben Tag durchgeführt. Sehr empfehlenswert!"
   },
   {
-    name: "Michael Koch",
-    location: "Luzern",
-    initials: "MK",
+    name: "Petrit Thaci",
+    location: "Bern",
+    initials: "PT",
     text: "Faire Preise und ausgezeichnete Beratung. Unsere komplette Badezimmer-Sanierung wurde termingerecht und in bester Qualität abgeschlossen."
   }
 ];

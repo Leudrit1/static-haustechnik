@@ -1,11 +1,14 @@
 import { motion } from "framer-motion";
 import { CheckCircle } from "lucide-react";
+import wmremoveImage from "@assets/wmremove-transformed.webp";
+import heizungsanlageImage from "@assets/heizungsanlage.jpg";
+import upscaleImage from "@assets/upscalemedia-transformed.jpg";
 
 const services = [
   {
     title: "Wassersysteme",
     description: "Professionelle Installation und Wartung von Wasserleitungen, Sanitäranlagen und modernen Wassersystemen für Ihr Zuhause.",
-    image: "https://images.unsplash.com/photo-1607400201889-565b1ee75f8e?q=80&w=800&auto=format&fit=crop",
+    image: wmremoveImage,
     features: [
       "Wasserleitung Installation",
       "Sanitär-Installationen", 
@@ -15,7 +18,7 @@ const services = [
   {
     title: "Heizungsinstallation",
     description: "Moderne Heizsysteme für optimale Energieeffizienz und Wohnkomfort. Beratung, Installation und Service aus einer Hand.",
-    image: "https://images.unsplash.com/photo-1581094794329-c8112a89af12?q=80&w=800&auto=format&fit=crop",
+    image: heizungsanlageImage,
     features: [
       "Wärmepumpen",
       "Fußbodenheizung",
@@ -25,7 +28,7 @@ const services = [
   {
     title: "Allgemeine Haustechnik",
     description: "Umfassende Haustechnik-Dienstleistungen für Neubauten, Renovationen und Sanierungen in der ganzen Schweiz.",
-    image: "https://images.unsplash.com/photo-1621905252507-b35492cc74b4?q=80&w=800&auto=format&fit=crop",
+    image: upscaleImage,
     features: [
       "Neubau-Installationen",
       "Renovationen",
@@ -70,14 +73,14 @@ export default function ServicesSection() {
                 <div className="absolute inset-0 bg-gradient-to-b from-transparent to-secondary/30"></div>
               </div>
               <div className="p-6">
-                <h3 className="text-2xl font-bold text-foreground mb-3">{service.title}</h3>
-                <p className="text-muted-foreground mb-4">{service.description}</p>
+                <h3 className="text-2xl font-bold text-white mb-3">{service.title}</h3>
+                <p className="text-white/80 mb-4">{service.description}</p>
                 
                 <ul className="space-y-2 mb-6">
                   {service.features.map((feature, featureIndex) => (
                     <li key={featureIndex} className="flex items-start">
                       <CheckCircle className="w-5 h-5 text-primary mr-2 mt-0.5 flex-shrink-0" />
-                      <span className="text-foreground">{feature}</span>
+                      <span className="text-white">{feature}</span>
                     </li>
                   ))}
                 </ul>

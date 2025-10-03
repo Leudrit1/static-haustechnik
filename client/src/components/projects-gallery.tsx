@@ -3,34 +3,104 @@ import { useState } from "react";
 
 const projects = [
   {
-    src: "https://images.unsplash.com/photo-1607400201889-565b1ee75f8e?q=80&w=800&auto=format&fit=crop",
-    largeSrc: "https://images.unsplash.com/photo-1607400201889-565b1ee75f8e?q=80&w=1200&auto=format&fit=crop",
-    alt: "Heizungssystem mit Rohrleitungen"
+    src: "/attached_assets/gallery/20190712_135757.jpg",
+    largeSrc: "/attached_assets/gallery/20190712_135757.jpg",
+    alt: "Haustechnische Installation - Rohrleitungen"
   },
   {
-    src: "https://images.unsplash.com/photo-1581094794329-c8112a89af12?q=80&w=800&auto=format&fit=crop",
-    largeSrc: "https://images.unsplash.com/photo-1581094794329-c8112a89af12?q=80&w=1200&auto=format&fit=crop",
-    alt: "Kupfer Wasserrohre Installation"
+    src: "/attached_assets/gallery/20190712_135805.jpg",
+    largeSrc: "/attached_assets/gallery/20190712_135805.jpg",
+    alt: "Heizungssystem Installation"
   },
   {
-    src: "https://images.unsplash.com/photo-1621905252507-b35492cc74b4?q=80&w=800&auto=format&fit=crop",
-    largeSrc: "https://images.unsplash.com/photo-1621905252507-b35492cc74b4?q=80&w=1200&auto=format&fit=crop",
-    alt: "Industrielle Rohrleitungssysteme"
+    src: "/attached_assets/gallery/20190712_140053.jpg",
+    largeSrc: "/attached_assets/gallery/20190712_140053.jpg",
+    alt: "Wassersysteme Installation"
   },
   {
-    src: "https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?q=80&w=800&auto=format&fit=crop",
-    largeSrc: "https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?q=80&w=1200&auto=format&fit=crop",
-    alt: "Blaue Wasserrohre"
+    src: "/attached_assets/gallery/20191023_164626.jpg",
+    largeSrc: "/attached_assets/gallery/20191023_164626.jpg",
+    alt: "Rohrleitungssysteme im Detail"
   },
   {
-    src: "https://images.unsplash.com/photo-1635274343801-66d9ce5d60dc?q=80&w=800&auto=format&fit=crop",
-    largeSrc: "https://images.unsplash.com/photo-1635274343801-66d9ce5d60dc?q=80&w=1200&auto=format&fit=crop",
-    alt: "PVC Rohrleitungen"
+    src: "/attached_assets/gallery/20191023_164633.jpg",
+    largeSrc: "/attached_assets/gallery/20191023_164633.jpg",
+    alt: "Professionelle Haustechnik Arbeiten"
   },
   {
-    src: "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?q=80&w=800&auto=format&fit=crop",
-    largeSrc: "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?q=80&w=1200&auto=format&fit=crop",
-    alt: "Komplexe Rohrinstallation"
+    src: "/attached_assets/gallery/20191025_153000.jpg",
+    largeSrc: "/attached_assets/gallery/20191025_153000.jpg",
+    alt: "Heizungsanlagen Installation"
+  },
+  {
+    src: "/attached_assets/gallery/20191025_160055.jpg",
+    largeSrc: "/attached_assets/gallery/20191025_160055.jpg",
+    alt: "Wassersystem Optimierung"
+  },
+  {
+    src: "/attached_assets/gallery/20201216_133954.jpg",
+    largeSrc: "/attached_assets/gallery/20201216_133954.jpg",
+    alt: "Moderne Haustechnik Lösungen"
+  },
+  {
+    src: "/attached_assets/gallery/20201216_134707.jpg",
+    largeSrc: "/attached_assets/gallery/20201216_134707.jpg",
+    alt: "Rohrsystem Maintenance"
+  },
+  {
+    src: "/attached_assets/gallery/20210205_152341.jpg",
+    largeSrc: "/attached_assets/gallery/20210205_152341.jpg",
+    alt: "Heizungsmodernisierung"
+  },
+  {
+    src: "/attached_assets/gallery/20210924_091943.jpg",
+    largeSrc: "/attached_assets/gallery/20210924_091943.jpg",
+    alt: "Energieeffiziente Heizungstechnik"
+  },
+  {
+    src: "/attached_assets/gallery/20210924_091949.jpg",
+    largeSrc: "/attached_assets/gallery/20210924_091949.jpg",
+    alt: "Spezialanlagen Installation"
+  },
+  {
+    src: "/attached_assets/gallery/20211203_145215.jpg",
+    largeSrc: "/attached_assets/gallery/20211203_145215.jpg",
+    alt: "Wärmepumpen Installation"
+  },
+  {
+    src: "/attached_assets/gallery/20220707_154843.jpg",
+    largeSrc: "/attached_assets/gallery/20220707_154843.jpg",
+    alt: "Klima und Lüftungstechnik"
+  },
+  {
+    src: "/attached_assets/gallery/20220712_170611.jpg",
+    largeSrc: "/attached_assets/gallery/20220712_170611.jpg",
+    alt: "Solarunterstützte Heizung"
+  },
+  {
+    src: "/attached_assets/gallery/20221013_101927.jpg",
+    largeSrc: "/attached_assets/gallery/20221013_101927.jpg",
+    alt: "Smart Home Technik"
+  },
+  {
+    src: "/attached_assets/gallery/20221013_101939.jpg",
+    largeSrc: "/attached_assets/gallery/20221013_101939.jpg",
+    alt: "Digitale Heizungssteuerung"
+  },
+  {
+    src: "/attached_assets/gallery/20221202_114319.jpg",
+    largeSrc: "/attached_assets/gallery/20221202_114319.jpg",
+    alt: "Nachhaltige Haustechnik"
+  },
+  {
+    src: "/attached_assets/gallery/20221202_114326.jpg",
+    largeSrc: "/attached_assets/gallery/20221202_114326.jpg",
+    alt: "Effiziente Wassersysteme"
+  },
+  {
+    src: "/attached_assets/gallery/20230310_120325.jpg",
+    largeSrc: "/attached_assets/gallery/20230310_120325.jpg",
+    alt: "Zukunftssichere Gebäudetechnik"
   }
 ];
 

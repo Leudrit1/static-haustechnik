@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import logoImage from "@assets/favicon.png";
 
 const footerSections = [
   {
@@ -6,8 +7,7 @@ const footerSections = [
     links: [
       { label: "Wassersysteme", href: "#leistungen" },
       { label: "Heizungsinstallation", href: "#leistungen" },
-      { label: "Allgemeine Haustechnik", href: "#leistungen" },
-      { label: "Notfall-Service", href: "#kontakt" }
+      { label: "Allgemeine Haustechnik", href: "#leistungen" }
     ]
   },
   {
@@ -15,16 +15,15 @@ const footerSections = [
     links: [
       { label: "Über uns", href: "#ueber-uns" },
       { label: "Projekte", href: "#projekte" },
-      { label: "Kontakt", href: "#kontakt" },
-      { label: "Karriere", href: "#" }
+      { label: "Kontakt", href: "#kontakt" }
     ]
   },
   {
     title: "Rechtliches",
     links: [
-      { label: "Impressum", href: "#" },
-      { label: "Datenschutz", href: "#" },
-      { label: "AGB", href: "#" }
+      { label: "Impressum", href: "javascript:void(0)" },
+      { label: "Datenschutz", href: "javascript:void(0)" },
+      { label: "AGB", href: "javascript:void(0)" }
     ]
   }
 ];
@@ -43,9 +42,9 @@ export default function Footer() {
           >
             <div className="flex items-center space-x-3 mb-4">
               <img 
-                src="@assets/file_0000000029ec624386d5269d1de74cd4 (1)_1759404058688.png" 
+                src={logoImage} 
                 alt="Veluna Logo" 
-                className="h-10 w-10" 
+                className="h-11 w-10" 
               />
               <div>
                 <h3 className="text-lg font-bold">VELUNA</h3>

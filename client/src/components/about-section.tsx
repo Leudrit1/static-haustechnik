@@ -1,10 +1,9 @@
 import { motion } from "framer-motion";
+import pexelsImage from "@assets/pexels-mikhail-nilov-8943269.jpg";
 
 const stats = [
   { value: "15+", label: "Jahre Erfahrung", color: "text-primary" },
-  { value: "500+", label: "Projekte", color: "text-accent" },
-  { value: "98%", label: "Zufriedenheit", color: "text-primary" },
-  { value: "12", label: "Fachkräfte", color: "text-accent" }
+  { value: "500+", label: "Projekte", color: "text-accent" }
 ];
 
 export default function AboutSection() {
@@ -20,7 +19,7 @@ export default function AboutSection() {
           >
             <div className="relative rounded-2xl overflow-hidden shadow-2xl border border-border">
               <img 
-                src="https://images.unsplash.com/photo-1621905252472-3d0469a40e07?q=80&w=1200&auto=format&fit=crop" 
+                src={pexelsImage} 
                 alt="Veluna Haustechnik Team" 
                 className="w-full h-auto brightness-90"
               />

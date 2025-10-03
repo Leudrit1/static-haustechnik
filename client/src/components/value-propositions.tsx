@@ -52,13 +52,13 @@ export default function ValuePropositions() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: index * 0.1 }}
               viewport={{ once: true }}
-              className="text-center card-hover p-8 bg-muted rounded-xl"
+              className="text-center card-hover p-8 bg-white/5 backdrop-blur-lg rounded-xl"
             >
               <div className={`w-16 h-16 ${prop.color === 'text-primary' ? 'bg-primary/10' : 'bg-accent/10'} rounded-full flex items-center justify-center mx-auto mb-4 service-icon`}>
                 <prop.icon className={`w-8 h-8 ${prop.color}`} />
               </div>
-              <h3 className="text-xl font-bold text-foreground mb-3">{prop.title}</h3>
-              <p className="text-muted-foreground">{prop.description}</p>
+              <h3 className="text-xl font-bold text-white mb-3">{prop.title}</h3>
+              <p className="text-white/80">{prop.description}</p>
             </motion.div>
           ))}
         </div>
